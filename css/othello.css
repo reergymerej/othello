@@ -1,0 +1,66 @@
+body {
+  background-color: #666;
+  font-size: 12px; }
+
+#settings {
+  background-color: #999;
+  float: right; }
+  #settings label, #settings input, #settings select {
+    display: block; }
+
+.square {
+  background-color: #78acb1;
+  border: 1px solid #98c0c4;
+  width: 50px;
+  height: 50px;
+  float: left; }
+  .square.west {
+    clear: left; }
+  .square.active {
+    background-image: url(img/dot.png);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .square.player2 {
+    background-image: url(img/mauve.png);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .square.player1 {
+    background-image: url(img/black.png);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .square.available {
+    background-color: #51878c;
+    border-color: #c09692;
+    cursor: pointer; }
+  .square.threatened {
+    border-color: red; }
+  .square strong {
+    background-color: #999;
+    color: black;
+    font-family: Courier;
+    font-size: 1.2em;
+    display: none;
+    padding: 0 .3em; }
+
+#score {
+  height: 50px;
+  padding: 5px;
+  float: left;
+  clear: left; }
+  #score .square {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    float: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color: #fff; }
+
+/***********************
+	dialog
+***********************/
+#dialog {
+  display: none; }
+
+button {
+  display: block; }

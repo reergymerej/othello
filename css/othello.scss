@@ -1,0 +1,90 @@
+$primaryColor: #78ACB1;
+$squareSize: 50px;
+
+body {
+	background-color: #666;
+	font-size:12px;
+}
+#settings {
+	background-color: #999;
+	float:right;
+
+	label, input, select {
+		display: block;
+	}
+}
+#grid {
+}
+.square {
+	$squareColor: $primaryColor;
+	$activeColor: darken($squareColor, 15%);
+	$accent: lighten(complement($activeColor), 23%);
+	$threatenedColor: red;
+
+	background-color: $squareColor;
+	border:1px solid lighten($squareColor, 10%);
+	width:$squareSize;
+	height:$squareSize;
+	float:left;
+	&.west{
+		clear:left;
+	}
+	&.active{
+		background-image: url(img/dot.png);
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&.player2 {
+		background-image: url(img/mauve.png);
+		background-position: center;
+		background-repeat: no-repeat;	
+	}
+	&.player1 {
+		background-image: url(img/black.png);
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&.available {
+		background-color:$activeColor;
+		border-color:$accent;
+		cursor:pointer;
+	}
+	&.threatened {
+		border-color: $threatenedColor;
+	}
+	strong {
+		background-color: #999;
+		color: black;
+		font-family: Courier;
+		font-size: 1.2em;
+		display: none;
+		padding: 0 .3em;
+	}
+}
+
+#score {
+	height:$squareSize;
+	padding: 5px;
+	float:left;
+	clear:left;
+
+	.square {
+		border: none;	
+		background-color: rgba(255, 255, 255, 0);
+		float: none;
+		display: inline-block;
+		text-align: center;
+		line-height: $squareSize;
+		color: #fff;
+	}
+}
+/***********************
+	dialog
+***********************/
+
+#dialog {
+	display:none;
+}
+button {
+	display:block;
+}
