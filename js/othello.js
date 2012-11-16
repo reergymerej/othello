@@ -1,3 +1,9 @@
+/**
+* Jeremy Greer
+* reergymerej.com
+* 11/16/2012
+**/
+
 var debugMoves = '';
 //debugMoves = '[{"claimedBy":"player1","index":30},{"claimedBy":"player2","index":38},{"claimedBy":"player1","index":46},{"claimedBy":"player2","index":39},{"claimedBy":"player1","index":45},{"claimedBy":"player2","index":22}]';
 
